@@ -1,6 +1,9 @@
-@use './variable.scss' as variable;
-.card{
-    background-color: variable.$light;
-    padding: 14px 20px;
-    border-radius: 10px;
+@use "./variable.scss" as variable;
+.card {
+  background-color: variable.$light;
+  padding: 14px 20px;
+  border-radius: 10px;
+  &:hover {
+    box-shadow: 0 1px 2px rgb(0 0 0 / 0.2);
+  }
 }

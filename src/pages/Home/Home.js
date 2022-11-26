@@ -21,8 +21,8 @@ export default function Home() {
         </div>
       </Card>
       <div className="wrapper-button">
-        <Button>Get Started</Button>
-        <Button color="danger">About Us</Button>
+        <Button color="danger">Get Started</Button>
+        <Button>About Us</Button>
       </div>
       <div className="flex center">
         <Card>Full unit testing</Card>

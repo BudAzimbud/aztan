@@ -1,3 +1,4 @@
+@use "./variable.scss" as variable;
 .container {
   background-color: #f5f5f5;
   display: flex;
@@ -5,6 +6,7 @@
 }
 
 .sidebar {
+  padding: 0 1%;
   background-color: #fff;
   width: 18%;
   .logo {
@@ -20,13 +22,13 @@
     flex-direction: column;
   }
   li {
+    border-radius: 4px;
     cursor: pointer;
     display: flex;
     align-items: center;
     padding: 8px;
     gap: 1rem;
     height: 2rem;
-    border-radius: 4px;
     transition: 0.5s;
 
     &:hover {
@@ -36,10 +38,13 @@
     }
   }
   .active {
-    background-color: #adc6ff;
+    color: variable.$light;
+    background-color: variable.$primary;
+    box-shadow: 0 10px 10px rgb(0 0 0 / 0.2);
     &:hover {
       padding-left: 8px;
-      background-color: #adc6ff;
+      box-shadow: 0 3px 3px rgb(0 0 0 / 0.2);
+      background-color: variable.$primary;
     }
   }
 }
@@ -58,9 +63,3 @@
     font-weight: bold;
   }
 }
-
-
-
-
-
-

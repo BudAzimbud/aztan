@@ -1,19 +1,15 @@
 import React from "react";
 import "./style.scss";
 import AppImage from "../../assets/images/app-image.png";
+import Button from "../../components/Button";
+import Card from "../../components/Card";
 export default function Home() {
-  const menus = [
-    { name: "Roadmap", icons: "icon" },
-    { name: "Get Started", icons: "icon" },
-    { name: "Home", icons: "icon" },
-  ];
-
   return (
     <>
-      <div className="flex">
+      <Card className="flex">
         <div className="header">
           <h1>Aztan Reactjs</h1>
-          <p>slug about this page</p>
+          <p className="paragraph">slug about this page</p>
         </div>
         <div className="wrapper-hero">
           <div className="flex">
@@ -23,30 +19,28 @@ export default function Home() {
           </div>
           <img src={AppImage} alt="slider app" className="image" />
         </div>
-      </div>
+      </Card>
       <div className="wrapper-button">
-        <button>Get Started</button>
-        <button>About Us</button>
+        <Button>Get Started</Button>
+        <Button color="danger">About Us</Button>
       </div>
       <div className="flex center">
         <span>Full unit testing</span>
         <span>Beauty Design</span>
         <span>Rich components</span>
       </div>
-      <div className="contributor">
-        <h2 className="text-left">Contributor</h2>
-        <div className="flex">
-          <div>
-            <h4>Azim</h4>
-            <p>Hello my name is azim , Im developer Node js</p>
-            <p>Reactjs,Nestjs,Mongodb,Redis,PostgreSql,Nodejs,Redis,Docker</p>
-          </div>
-          <div>
-            <h4>Tania</h4>
-            <p>Hello my name is tania , Im designer</p>
-            <p>Htmll,Sass,Figma,Reactjs</p>
-          </div>
-        </div>
+      <h2>Contributor</h2>
+      <div className="flex">
+        <Card>
+          <h4>Azim</h4>
+          <p>Hello my name is azim , Im developer Node js</p>
+          <p>Reactjs,Nestjs,Mongodb,</p>
+        </Card>
+        <Card>
+          <h4>Tania</h4>
+          <p>Hello my name is tania , Im designer</p>
+          <p>Htmll,Sass,Figma,Reactjs</p>
+        </Card>
       </div>
     </>
   );

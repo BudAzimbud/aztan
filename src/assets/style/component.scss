@@ -1,0 +1,6 @@
+@use './variable.scss' as variable;
+.card{
+    background-color: variable.$light;
+    padding: 14px 20px;
+    border-radius: 10px;
+}

@@ -17,7 +17,7 @@ export default function Layout({ children }) {
       {/* <Sidebar /> */}
       <div className="sidebar">
         <div className="logo">
-          <img src={Logo} alt="Aztan" width={150} />
+          <img src={Logo} alt="Aztan" width={200} />
         </div>
         <ul>
           {menus.map((item, index) => (

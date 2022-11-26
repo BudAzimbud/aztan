@@ -9,13 +9,29 @@
   padding: 0 1%;
   background-color: #fff;
   width: 18%;
+  position: fixed;
+  height: 100vh;
   .logo {
-    margin-top: 2rem;
+    margin-top: 5px;
     margin-bottom: 3rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+
+    .btn-side {
+      button{
+        background-color: #000;
+        border: none;
+        padding: 4px;
+        border-radius: 100%;
+        width: fit-content;
+        cursor: pointer;
+        color: #fff;
+      }
+     
+    }
   }
+  
   ul {
     list-style-type: none;
     display: flex;
@@ -33,24 +49,36 @@
 
     &:hover {
       padding-left: 1rem;
-      background-color: #fff;
       transition: 0.5s;
     }
   }
   .active {
     color: variable.$light;
     background-color: variable.$primary;
-    box-shadow: 0 10px 10px rgb(0 0 0 / 0.2);
+    box-shadow: 0 5px 10px rgb(0 0 0 / 0.2);
     &:hover {
       padding-left: 8px;
-      box-shadow: 0 3px 3px rgb(0 0 0 / 0.2);
+      box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
       background-color: variable.$primary;
     }
   }
 }
 .main-content {
-  width: 75%;
-  padding: 2% 2%;
+  width: 80%;
+  padding: 1% 2%;
+  margin-left: 20%;
+}
+.navbar{
+ background-color: #fff;
+ height: 60px;
+ padding: 0 2%;
+ border-radius: 8px;
+ width: 72%;
+ margin-bottom: 24px;
+ position: fixed;
+ right: 2%;
+ align-items: center;
+ display: flex;
 }
 
 .header {

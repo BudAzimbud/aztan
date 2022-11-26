@@ -17,7 +17,10 @@ export default function Layout({ children }) {
       {/* <Sidebar /> */}
       <div className="sidebar">
         <div className="logo">
-          <img src={Logo} alt="Aztan" width={200} />
+          <img src={Logo} alt="Aztan" width="60%" />
+          <div className="btn-side">
+            <button>small</button>
+          </div>
         </div>
         <ul>
           {menus.map((item, index) => (
@@ -32,7 +35,10 @@ export default function Layout({ children }) {
           ))}
         </ul>
       </div>
-      <div className="main-content">{children}</div>
+      <div className="main-content">
+        <div className="navbar">navbar</div>
+        <div style={{marginTop: '80px'}}>{children}</div>
+      </div>
     </div>
   );
 }

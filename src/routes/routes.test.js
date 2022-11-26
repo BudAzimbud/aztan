@@ -1,4 +1,4 @@
-import Home from "../pages/Home";
+import Home from "../pages/Home/Home";
 import { home } from "./home";
 
 function findElement(key, value) {

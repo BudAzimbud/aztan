@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Layout from "../layout/Layout";
 import { home } from "./home";
 
 const routes = [...home];
@@ -11,7 +12,7 @@ export default function Router() {
           <Route
             key={data.path}
             path={data.path}
-            element={data.element}
+            element={<Layout>{data.element}</Layout>}
             exact={true}
           />
         ))}

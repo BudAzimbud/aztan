@@ -9,58 +9,45 @@ export default function Home() {
   ];
 
   return (
-    <div className="container">
-      <div className="sidebar">
-        <img className="logo" src="" alt="Aztan" />
-        <ul>
-          {menus.map((item, index) => (
-            <li key={index}>
-              <div className="icon">{item.icons}</div>
-              <div className="name">{item.name}</div>
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div className="main-content">
-        <div className="flex">
-          <div className="header">
-            <h1>Aztan Reactjs</h1>
-            <p>slug about this page</p>
-          </div>
-          <div className="wrapper-hero">
-            <div className="flex">
-              <span>Reactjs</span>
-              <span>Html</span>
-              <span>Sass</span>
-            </div>
-            <img src={AppImage} alt="slider app" className="image" />
-          </div>
+    <>
+      <div className="flex">
+        <div className="header">
+          <h1>Aztan Reactjs</h1>
+          <p>slug about this page</p>
         </div>
-        <div className="wrapper-button">
-          <button>Get Started</button>
-          <button>About Us</button>
-        </div>
-        <div className="flex center">
-          <span>Full unit testing</span>
-          <span>Beauty Design</span>
-          <span>Rich components</span>
-        </div>
-        <div className="contributor">
-          <h2 className="text-left">Contributor</h2>
+        <div className="wrapper-hero">
           <div className="flex">
-            <div>
-              <h4>Azim</h4>
-              <p>Hello my name is azim , Im developer Node js</p>
-              <p>Reactjs,Nestjs,Mongodb,Redis,PostgreSql,Nodejs,Redis,Docker</p>
-            </div>
-            <div>
-              <h4>Tania</h4>
-              <p>Hello my name is tania , Im designer</p>
-              <p>Htmll,Sass,Figma,Reactjs</p>
-            </div>
+            <span>Reactjs</span>
+            <span>Html</span>
+            <span>Sass</span>
+          </div>
+          <img src={AppImage} alt="slider app" className="image" />
+        </div>
+      </div>
+      <div className="wrapper-button">
+        <button>Get Started</button>
+        <button>About Us</button>
+      </div>
+      <div className="flex center">
+        <span>Full unit testing</span>
+        <span>Beauty Design</span>
+        <span>Rich components</span>
+      </div>
+      <div className="contributor">
+        <h2 className="text-left">Contributor</h2>
+        <div className="flex">
+          <div>
+            <h4>Azim</h4>
+            <p>Hello my name is azim , Im developer Node js</p>
+            <p>Reactjs,Nestjs,Mongodb,Redis,PostgreSql,Nodejs,Redis,Docker</p>
+          </div>
+          <div>
+            <h4>Tania</h4>
+            <p>Hello my name is tania , Im designer</p>
+            <p>Htmll,Sass,Figma,Reactjs</p>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

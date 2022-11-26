@@ -3,14 +3,43 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  padding:1rem;
+  padding: 10px;
 }
 .header {
+  width: 100%;
   text-align: center;
- 
+  h1 {
+    color: rgb(2, 2, 41);
+  }
+  p {
+    font-weight: bold;
+  }
 }
 
-.image{
-    width: 50%;
+.wrapper-button {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  align-items: center;
+}
 
+.wrapper-hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.image {
+  width: 80%;
+}
+
+.contributor{
+    margin-top: 10px;
 }

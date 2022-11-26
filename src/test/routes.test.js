@@ -1,5 +1,5 @@
 import Home from "../pages/Home/Home";
-import { home } from "./home";
+import { home } from "../routes/home";
 
 function findElement(key, value) {
   return home.find((data) => data[key] === value);

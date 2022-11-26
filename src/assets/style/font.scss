@@ -1,0 +1,5 @@
+@use './variable.scss' as variable;
+
+.paragraph{
+    color:variable.$secondary
+}

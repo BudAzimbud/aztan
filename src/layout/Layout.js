@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./style.scss";
+import Logo from "../assets/images/aztan-logo.png";
 
 export default function Layout({ children }) {
   const menus = [
@@ -12,9 +13,11 @@ export default function Layout({ children }) {
 
   return (
     <div className="container">
+      {/* <Navbar /> */}
+      {/* <Sidebar /> */}
       <div className="sidebar">
         <div className="logo">
-          <img src="" alt="Aztan" />
+          <img src={Logo} alt="Aztan" width={150} />
         </div>
         <ul>
           {menus.map((item, index) => (
@@ -29,8 +32,6 @@ export default function Layout({ children }) {
           ))}
         </ul>
       </div>
-      {/* <Navbar /> */}
-      {/* <Sidebar /> */}
       <div className="main-content">{children}</div>
     </div>
   );

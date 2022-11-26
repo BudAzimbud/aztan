@@ -1,0 +1,33 @@
+@use '../../assets/style/variable.scss' as variable;
+.btn{
+    padding:10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+.btn.primary{
+    background-color: variable.$primary;
+    color:variable.$light;
+}
+
+.btn.danger{
+    background-color: variable.$danger;
+    color:variable.$light;
+}
+
+.btn.success{
+    background-color: variable.$success;
+    color:variable.$light;
+}
+
+.btn.dark{
+    background-color: variable.$dark;
+    color:variable.$light;
+}
+
+.btn.light{
+    background-color: variable.$light;
+    color:variable.$light;
+}
+

@@ -5,7 +5,7 @@ import Button from "../../components/Button";
 import Card from "../../components/Card";
 export default function Home() {
   return (
-    <>
+    <div>
       <Card className="flex">
         <div className="header">
           <h1>Aztan Reactjs</h1>
@@ -25,9 +25,9 @@ export default function Home() {
         <Button color="danger">About Us</Button>
       </div>
       <div className="flex center">
-        <span>Full unit testing</span>
-        <span>Beauty Design</span>
-        <span>Rich components</span>
+        <Card>Full unit testing</Card>
+        <Card>Beauty Design</Card>
+        <Card>Rich components</Card>
       </div>
       <h2>Contributor</h2>
       <div className="flex">
@@ -42,6 +42,6 @@ export default function Home() {
           <p>Htmll,Sass,Figma,Reactjs</p>
         </Card>
       </div>
-    </>
+    </div>
   );
 }

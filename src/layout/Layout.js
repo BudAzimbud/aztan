@@ -1,20 +1,12 @@
 import React, { useState } from "react";
 import "./style.scss";
 import Logo from "../assets/images/aztan-logo.png";
-
+import { menus } from "../navigation/vertical";
 export default function Layout({ children }) {
-  const menus = [
-    { name: "Roadmap", icons: "icon" },
-    { name: "Get Started", icons: "icon" },
-    { name: "Home", icons: "icon" },
-  ];
-
   const [active, setActive] = useState(0);
 
   return (
     <div className="container">
-      {/* <Navbar /> */}
-      {/* <Sidebar /> */}
       <div className="sidebar">
         <div className="logo">
           <img src={Logo} alt="Aztan" width="60%" />
@@ -29,7 +21,7 @@ export default function Layout({ children }) {
               className={`${active === index && "active"}`}
               onClick={() => setActive(index)}
             >
-              <div className="icon">{item.icons}</div>
+              <div className="icon">{item.icon}</div>
               <div className="name">{item.name}</div>
             </li>
           ))}
@@ -37,7 +29,7 @@ export default function Layout({ children }) {
       </div>
       <div className="main-content">
         <div className="navbar">navbar</div>
-        <div style={{marginTop: '80px'}}>{children}</div>
+        <div style={{ marginTop: "80px" }}>{children}</div>
       </div>
     </div>
   );

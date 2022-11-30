@@ -55,10 +55,10 @@
   .active {
     color: variable.$light;
     background-color: variable.$primary;
-    box-shadow: 0 5px 10px rgb(0 0 0 / 0.2);
+    box-shadow: 0 3px 10px variable.$primary;
     &:hover {
       padding-left: 8px;
-      box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+      box-shadow: 0 3px 10px variable.$primary;
       background-color: variable.$primary;
     }
   }

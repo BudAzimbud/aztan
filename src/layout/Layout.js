@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./style.scss";
 import Logo from "../assets/images/aztan-logo.png";
 import { menus } from "../navigation/vertical";
+import { Link } from "react-router-dom";
 export default function Layout({ children }) {
   const [active, setActive] = useState(0);
 
@@ -16,14 +17,16 @@ export default function Layout({ children }) {
         </div>
         <ul>
           {menus.map((item, index) => (
-            <li
-              key={index}
-              className={`${active === index && "active"}`}
-              onClick={() => setActive(index)}
-            >
-              <div className="icon">{item.icon}</div>
-              <div className="name">{item.name}</div>
-            </li>
+            <Link to={item.link} className="menus">
+              <li
+                key={index}
+                className={`${active === index && "active"}`}
+                onClick={() => setActive(index)}
+              >
+                <div className="icon">{item.icon}</div>
+                <div className="name">{item.name}</div>
+              </li>
+            </Link>
           ))}
         </ul>
       </div>

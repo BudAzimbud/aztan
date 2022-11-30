@@ -1,8 +1,10 @@
 import React from "react";
 import "./style.scss";
 import AppImage from "../../assets/images/app-image.png";
+import AztanLogo from "../../assets/images/aztan-logo.png";
 import Button from "../../components/Button";
 import Card from "../../components/Card";
+import Carousel from "../../components/Carousel";
 export default function Home() {
   return (
     <div>
@@ -17,7 +19,10 @@ export default function Home() {
             <span>Html</span>
             <span>Sass</span>
           </div>
-          <img src={AppImage} alt="slider app" className="image" />
+          <Carousel>
+            <img src={AppImage} alt="slider app" className="image" />
+            <img src={AztanLogo} alt="slider app" className="image" />
+          </Carousel>
         </div>
       </Card>
       <div className="wrapper-button">

@@ -8,6 +8,7 @@ function Avatar({ src, size = 50 }) {
         borderRadius: "50%",
         border: "1px solid black",
       }}
+      alt="Avatar"
       width={size}
       height={size}
     />

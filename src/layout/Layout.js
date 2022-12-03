@@ -1,20 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
+
+import { menus } from "../navigation/vertical";
+import Theme from '../components/Theme'
+import Sidebar from "../components/Sidebar";
+
 import "./style.scss";
 
-import Sidebar from "../components/Sidebar";
-import Theme from "../components/Theme";
-
 export default function Layout({ children }) {
-  const [active, setActive] = useState(0);
+  
 
   return (
-    <div className="container">
-      <Sidebar active={active} setActive={setActive}></Sidebar>
-      <div className="main-content">
-            <div className="navbar">
-              <Theme />
-            </div>
-            <div style={{ marginTop: "80px" }}>{children}</div>
+    <div className='container'>
+      <Sidebar menus={menus}/>
+      <div className='main-content'>
+        <div className='navbar'>
+          <Theme />
+        </div>
+        <div className="content">{children}</div>
       </div>
     </div>
   );

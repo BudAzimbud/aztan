@@ -14,9 +14,8 @@ export default function Sidebar(props) {
       </div>
       <ul>
         {menus.map((item, index) => (
-          <Link to={item.link} className="menus">
+          <Link key={index} to={item.link} className="menus">
             <li
-              key={index}
               className={`${props.active === index && "active"}`}
               onClick={() => props.setActive(index)}
             >

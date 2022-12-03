@@ -1,8 +1,8 @@
 import React from "react";
 import "./style.scss";
-function Card({ children, className, ...props }) {
+function Card({ children, className = "", ...props }) {
   return (
-    <div className="wrapper-card">
+    <div data-testid="wrapper-card" className="wrapper-card">
       <div className={"card " + className} {...props}>
         {children}
       </div>

@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "../layout/Layout";
-import { home } from "./home";
+import { home } from "./root";
 
 const routes = [...home];
 

@@ -6,14 +6,10 @@ import LogoBig from "../assets/images/aztan-logo.png";
 import LogoSmall from '../assets/images/aztan-logo-small.png'
 
 
-const Sidebar = ({menus}) => {
+const Sidebar = ({menus, smallSidebar, handleSidebarSize}) => {
     const [active, setActive] = useState(0)
 
-    const [smallSidebar,setSmallSidebar] = useState(false)
 
-    const handleSidebarSize = () => {
-        setSmallSidebar(!smallSidebar)
-    }
   return (
     <div className={`${smallSidebar? 'sidebar-small' : 'sidebar'}`}>
         <div className='logo-sidebar'>

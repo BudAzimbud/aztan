@@ -8,7 +8,7 @@ import Carousel from "../../components/Carousel";
 import Avatar from "../../components/Avatar";
 export default function Home() {
   return (
-    <div>
+    <>
       <Card className="flex">
         <div className="header">
           <h1>Aztan Reactjs</h1>
@@ -26,6 +26,7 @@ export default function Home() {
           </Carousel>
         </div>
       </Card>
+
       <div className="wrapper-button">
         <Button color="danger">Get Started</Button>
         <Button>About Us</Button>
@@ -50,6 +51,6 @@ export default function Home() {
           <p>Htmll,Sass,Figma,Reactjs</p>
         </Card>
       </div>
-    </div>
+    </>
   );
 }

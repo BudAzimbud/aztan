@@ -1,13 +1,30 @@
-
-@use '../../assets/style/variable.scss' as variable;
+@use "../../assets/style/variable.scss" as variable;
 .header {
-  width: 100%;
-  text-align: center;
+  width: 40%;
   h1 {
-    color:var(--dark);
+    color: var(--primary);
+    margin-bottom: 28px;
+    text-align: center;
   }
   p {
-    font-weight: bold;
+    font-weight: 300;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.5rem;
+  }
+  ul{
+    margin-top: 20px;
+    list-style: none;
+    text-align: left;
+    li{
+      margin-top: 10px;
+    }
+  }
+  span{
+    font-weight: 700;
+  }
+  .btn-header{
+    margin-top: 100px;
   }
 }
 
@@ -21,11 +38,27 @@
 }
 
 .wrapper-hero {
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
 }
-
+.stack{
+    background-color: var(--primary);
+    padding: 10px 15%;
+    text-align: center;
+    border-radius: 30px;
+    color: var(--light);
+    font-weight: 700;
+    box-shadow: 0 3px 8px rgb(0 0 0 / 0.2);
+}
+.container-stack{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
 .flex {
   display: flex;
   gap: 15px;
@@ -35,19 +68,26 @@
   margin-top: 10px;
   justify-content: center;
 }
-
-.image {
-  width: 80%;
+.image-carousel {
+  width: 100%;
+  height: 100%;
+  .image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
 }
+// .image {
+//   width: 100px;
+//   object-fit: cover;
+// }
 
 .contributor {
-    
-    padding: 0 5%;
-    margin-top: 40px;
-    div{
-        margin-top: 10px;
-    }
-
+  padding: 0 5%;
+  margin-top: 40px;
+  div {
+    margin-top: 10px;
+  }
 }
 .image {
   width: 80%;

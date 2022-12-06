@@ -1,6 +1,8 @@
 .wrapper-card{
-    transition: 0.2s;
+    transition: all 0.4s ease-out;
+    border-radius: 10px;
+    height: 100%;
     &:hover{
-        padding: 5px;
+        transform: translateY(-5px) scale(1.000) translateZ(0);
     }
 }

@@ -82,7 +82,7 @@
   width: 4%;
   position: fixed;
   height: 100vh;
-  transition: width 0.5s;
+  transition: width 0.7s;
 
   .logo-sidebar {
     margin-top: 20px;
@@ -129,22 +129,25 @@
       background-color: var(--primary);
     }
   }
-  
-  
-
 }
-
 .main-content {
   width: 80%;
   padding: 1% 2%;
   margin-left: 20%;
+  transition: 0.7s;
 }
 .main-content-small{
   width: 90%;
-  margin-left: 6%;
+  padding: 1% 1%;
+  transition: 0.7s;
+  margin-left: 7%;
   .navbar{
     width: 86%;
+    transition: 0.7s;
   }
+  .content {
+    margin-top: 80px;
+}
 }
 .navbar {
   background-color: #fff;
@@ -157,6 +160,9 @@
   right: 2%;
   align-items: center;
   display: flex;
+  z-index: 5;
+  transition: 0.5s;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 .main-content .content {
   margin-top: 80px;

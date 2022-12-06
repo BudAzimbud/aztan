@@ -16,7 +16,7 @@ export default function Layout({ children }) {
   return (
     <div className='container'>
       <Sidebar smallSidebar={smallSidebar} handleSidebarSize={handleSidebarSize} menus={menus}/>
-      <div className='main-content'>
+      <div className={`${smallSidebar? 'main-content-small' : 'main-content'}`}>
         <div className='navbar'>
           <Theme />
         </div>

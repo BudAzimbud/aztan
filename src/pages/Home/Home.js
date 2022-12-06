@@ -1,10 +1,13 @@
 import React from "react";
 import "./style.scss";
 import AppImage from "../../assets/images/app-image.png";
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import AztanLogo from "../../assets/images/logo.png";
 import Button from "../../components/Button";
 import Card from "../../components/Card";
-import Carousel from "../../components/Carousel";
+import '../../assets/style/component.scss'
+// import Carousel from "../../components/Carousel";
+import Carousel from "../../components/Carousels";
 import Avatar from "../../components/Avatar";
 export default function Home() {
   return (
@@ -12,18 +15,22 @@ export default function Home() {
       <Card className="flex">
         <div className="header">
           <h1>Aztan Reactjs</h1>
-          <p className="paragraph">slug about this page</p>
+          <p className="paragraph">The most developer friendly & highly customizable <span>ReactJS Admin Dashboard Template of 2022 !</span></p>
+          <ul>
+            <li>- Now support Bootstrap 4 & 5 🚀</li>
+            <li>- React Router 6 🍦</li>
+            <li>- Based on Hooks & Functional Components🔥</li>
+            <li>- Based on Reactstrap & Vite 🧘</li>
+          </ul>
+          <Button color="dark" className="btn-header">Buy Me Lamborgini 🚗</Button>
         </div>
         <div className="wrapper-hero">
-          <div className="flex">
-            <span>Reactjs</span>
-            <span>Html</span>
-            <span>Sass</span>
+          <div className="container-stack">
+            <span className="stack">Reactjs</span>
+            <span className="stack">Html</span>
+            <span className="stack">Sass</span>
           </div>
-          <Carousel>
-            <img src={AppImage} alt="slider app" className="image" />
-            <img src={AztanLogo} alt="slider app" className="image" />
-          </Carousel>
+          <Carousel />
         </div>
       </Card>
 

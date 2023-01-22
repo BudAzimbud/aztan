@@ -4,7 +4,13 @@ import "./index.scss";
 function Avatar({ src, size = 50 }) {
   console.log(src);
   return (
-    <img src={src} className="avatar" alt="Avatar" width={size} height={size} />
+    <img
+      src={src}
+      className="avatar"
+      alt="Avatar"
+      width={size}
+      style={{ height: size }}
+    />
   );
 }
 

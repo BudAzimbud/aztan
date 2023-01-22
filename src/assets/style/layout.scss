@@ -1,5 +1,5 @@
 @use "./variable.scss" as variable;
-.container {
+.wrapper {
   background-color: #f5f5f5;
   display: flex;
   min-height: 100vh;
@@ -131,21 +131,22 @@
   }
 }
 .main-content {
-  width: 80%;
+  width: 100%;
   // padding: 1% 2%;
-  margin-left: 20%;
+  margin-left: 18%;
+
   // transition: 0.7s;
   // padding: 0 10%;
   // padding-right: 20%;
   // padding-right: 1000px;
 }
 .main-content-small {
-  width: 90%;
-  padding: 1% 1%;
+  width: 100%;
+  padding: 1% 0%;
   transition: 0.7s;
   margin-left: 7%;
-  .navbar {
-    width: 86%;
+  .navbar-component {
+    width: 90%;
     transition: 0.7s;
   }
   .content {
@@ -153,12 +154,12 @@
     padding: 10px;
   }
 }
-.navbar {
+.navbar-component {
   background-color: #fff;
   height: 60px;
   padding: 0 2%;
   border-radius: 8px;
-  width: 74%;
+  width: 80%;
   top: 10px;
   margin-bottom: 24px;
   position: fixed;
@@ -188,8 +189,9 @@
   .sidebar-small {
     display: none;
   }
-  .navbar {
-    width: 92%;
+  .navbar-component {
+    width: 100%;
+    right: 0;
   }
   .main-content {
     width: 100%;

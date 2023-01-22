@@ -9,21 +9,26 @@ import "./style.scss";
 export default function Layout({ children }) {
   const [smallSidebar, setSmallSidebar] = useState(false);
 
+  const [typeLayout, setTypeLayout] = useState("shadow");
+
   const handleSidebarSize = () => {
     setSmallSidebar(!smallSidebar);
   };
 
   return (
-    <div className="container">
+    <div className="wrapper">
       <Sidebar
         smallSidebar={smallSidebar}
         handleSidebarSize={handleSidebarSize}
         menus={menus}
+        typeLayout={typeLayout}
       />
       <div
         className={`${smallSidebar ? "main-content-small" : "main-content"}`}
       >
-        <div className="navbar flex justify-between">
+        <div
+          className={`border-2 border-black navbar-component shadow flex justify-between ${typeLayout}`}
+        >
           <Theme />
           <select className="w-[80px] p-2.5 text-gray-500 bg-white text-[15px] rounded-md  outline-none appearance-none">
             <option>Layout</option>

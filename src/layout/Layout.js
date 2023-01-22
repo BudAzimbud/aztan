@@ -10,6 +10,7 @@ import "./style.scss";
 export default function Layout({ children }) {
   const [smallSidebar, setSmallSidebar] = useState(false);
   const [showHumberger, setShowHumberger] = useState(0);
+  const [showSidebar, setShowSidebar] = useState("hide-sidebar");
 
   const [typeLayout, setTypeLayout] = useState("shadow");
 
@@ -17,8 +18,12 @@ export default function Layout({ children }) {
     setSmallSidebar(!smallSidebar);
   };
 
-  const handleShowHumberger = () => {
+  const handleShowSidebar = () => {
     setShowHumberger(!showHumberger);
+    if (showSidebar === "show-sidebar") {
+      return setShowSidebar("hide-sidebar");
+    }
+    setShowSidebar("show-sidebar");
   };
 
   return (
@@ -28,6 +33,8 @@ export default function Layout({ children }) {
         handleSidebarSize={handleSidebarSize}
         menus={menus}
         typeLayout={typeLayout}
+        showSidebar={showSidebar}
+        handleShowSidebar={handleShowSidebar}
       />
       <div
         className={`${smallSidebar ? "main-content-small" : "main-content"}`}
@@ -39,11 +46,7 @@ export default function Layout({ children }) {
         >
           <div className="flex items-center gap-1.5">
             <div className="humberger hidden mobile:block">
-              {showHumberger ? (
-                <RiMenuFoldLine size={25} onClick={handleShowHumberger} />
-              ) : (
-                <RiMenuUnfoldLine size={25} onClick={handleShowHumberger} />
-              )}
+              <RiMenuUnfoldLine size={25} onClick={handleShowSidebar} />
             </div>
             <Theme />
           </div>

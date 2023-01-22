@@ -7,7 +7,7 @@ import LogoSmall from "../assets/images/aztan-logo-small.png";
 
 const Sidebar = ({ menus, smallSidebar, handleSidebarSize, typeLayout }) => {
   const [active, setActive] = useState(0);
-
+  const colorMenu = { color: typeLayout === "bg-black" ? "white" : "" };
   return (
     <div
       className={`${
@@ -34,8 +34,12 @@ const Sidebar = ({ menus, smallSidebar, handleSidebarSize, typeLayout }) => {
               className={`${active === index && "active"}`}
               onClick={() => setActive(index)}
             >
-              <div className="icon">{item.icon}</div>
-              <div className="name">{item.name}</div>
+              <div className="icon" style={colorMenu}>
+                {item.icon}
+              </div>
+              <div className="name" style={colorMenu}>
+                {item.name}
+              </div>
             </li>
           </Link>
         ))}

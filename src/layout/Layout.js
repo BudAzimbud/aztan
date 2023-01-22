@@ -38,7 +38,9 @@ export default function Layout({ children }) {
             }}
             className="w-[80px] p-2.5  text-gray-500 bg-white text-[15px] rounded-md  outline-none appearance-none"
           >
-            <option disabled>Layout</option>
+            <option selected disabled>
+              Layout
+            </option>
             <option value="border-[1px] border-gray-400">Border</option>
             <option value="shadow-xl">Shadow</option>
             <option value="bg-black">Semi dark</option>

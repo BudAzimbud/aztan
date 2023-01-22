@@ -23,9 +23,14 @@ export default function Layout({ children }) {
       <div
         className={`${smallSidebar ? "main-content-small" : "main-content"}`}
       >
-        <div className="navbar">
+        <div className="navbar flex justify-between">
           <Theme />
-          
+          <select className="w-[80px] p-2.5 text-gray-500 bg-white text-[15px] rounded-md  outline-none appearance-none">
+            <option>Layout</option>
+            <option>Border</option>
+            <option>Shadow</option>
+            <option>Semi dark</option>
+          </select>
         </div>
         <div className="content">{children}</div>
       </div>

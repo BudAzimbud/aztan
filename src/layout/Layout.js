@@ -25,6 +25,7 @@ export default function Layout({ children }) {
       >
         <div className="navbar">
           <Theme />
+          
         </div>
         <div className="content">{children}</div>
       </div>

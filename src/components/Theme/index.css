@@ -1,13 +1,5 @@
-.theme{
-    display: flex;
-    gap: 5px;
-    align-items: center;
-}
-.humberger{
-    display: none;
-}
-@media only screen and (max-width: 769px) {
-    .humberger{
-        display: inline;
-    }
+.theme {
+  display: flex;
+  gap: 5px;
+  align-items: center;
 }

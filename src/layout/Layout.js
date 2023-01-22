@@ -27,14 +27,21 @@ export default function Layout({ children }) {
         className={`${smallSidebar ? "main-content-small" : "main-content"}`}
       >
         <div
-          className={`border-2 border-black navbar-component shadow flex justify-between ${typeLayout}`}
+          className={` navbar-component shadow flex justify-between ${
+            typeLayout === "bg-black" ? "" : typeLayout
+          }`}
         >
           <Theme />
-          <select className="w-[80px] p-2.5 text-gray-500 bg-white text-[15px] rounded-md  outline-none appearance-none">
-            <option>Layout</option>
-            <option>Border</option>
-            <option>Shadow</option>
-            <option>Semi dark</option>
+          <select
+            onChange={(event) => {
+              setTypeLayout(event.target.value);
+            }}
+            className="w-[80px] p-2.5  text-gray-500 bg-white text-[15px] rounded-md  outline-none appearance-none"
+          >
+            <option disabled>Layout</option>
+            <option value="border-[1px] border-gray-400">Border</option>
+            <option value="shadow-xl">Shadow</option>
+            <option value="bg-black">Semi dark</option>
           </select>
         </div>
         <div className="content">{children}</div>

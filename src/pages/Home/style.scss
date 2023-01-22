@@ -118,3 +118,17 @@
 .image {
   width: 80%;
 }
+
+@media only screen and (max-width: 769px) {
+  .flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .header,
+  .wrapper-hero {
+    width: 100%;
+  }
+  .contributors {
+    overflow: scroll;
+  }
+}

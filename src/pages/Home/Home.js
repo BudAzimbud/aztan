@@ -12,7 +12,7 @@ import Avatar from "../../components/Avatar";
 export default function Home() {
   return (
     <>
-      <Card className="flex">
+      <Card className="one-line">
         <div className="header">
           <h1>Aztan Reactjs</h1>
           <p className="paragraph">
@@ -43,7 +43,7 @@ export default function Home() {
         <Button color="danger">Get Started</Button>
         <Button>About Us</Button>
       </div>
-      <div className="flex center">
+      <div className="one-line center">
         <Card>Full unit testing</Card>
         <Card>Beauty Design</Card>
         <Card>Rich components</Card>

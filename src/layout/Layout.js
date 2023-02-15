@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { RiMenuFoldLine, RiMenuUnfoldLine } from "react-icons/ri";
 
 import { menus } from "../navigation/vertical";
@@ -19,12 +19,19 @@ export default function Layout({ children }) {
   };
 
   const handleShowSidebar = () => {
+    setSmallSidebar(false)
     setShowHumberger(!showHumberger);
     if (showSidebar === "show-sidebar") {
       return setShowSidebar("hide-sidebar");
     }
     setShowSidebar("show-sidebar");
   };
+  useEffect(()=>{
+    setSmallSidebar(false)
+
+   
+    
+  },[])
 
   return (
     <div className="wrapper">
@@ -45,9 +52,9 @@ export default function Layout({ children }) {
           }`}
         >
           <div className="flex items-center gap-1.5">
-            <div className="humberger hidden mobile:block">
-              <RiMenuUnfoldLine size={25} onClick={handleShowSidebar} />
-            </div>
+            <button className="humberger hidden mobile:block" onClick={handleShowSidebar}>
+              <RiMenuUnfoldLine size={25}  />
+            </button>
             <Theme />
           </div>
           <select

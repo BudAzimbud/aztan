@@ -42,7 +42,7 @@
       animation-name: clip-path-animation;
       animation-timing-function: ease-in-out;
       transition: visibility 0s, opacity 0.5s ease-in-out;
-      @for $i from 1 through 10 {
+      @for $i from 1 through 100 {
         &:nth-of-type(#{$i}) {
           animation-duration: #{$i * 0.3}s;
         }

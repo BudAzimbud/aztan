@@ -157,8 +157,12 @@
     padding: 10px;
   }
 }
+.select{
+  background-color: var(--bg-color);
+  color:var(--text-color)
+}
 .navbar-component {
-  background-color: #fff;
+  background-color: var(--bg-color);
   height: 60px;
   padding: 0 2%;
   border-radius: 8px;
@@ -174,6 +178,7 @@
 }
 .main-content .content {
   margin-top: 80px;
+  padding:0 12px;
 }
 .header {
   width: 100%;

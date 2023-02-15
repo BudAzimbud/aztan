@@ -54,7 +54,7 @@ export default function Layout({ children }) {
             onChange={(event) => {
               setTypeLayout(event.target.value);
             }}
-            className="w-[80px] p-2.5  text-gray-500 bg-white text-[15px] rounded-md  outline-none appearance-none"
+            className="select w-[80px] p-2.5  text-[15px] rounded-md  outline-none appearance-none"
           >
             <option selected disabled>
               Layout

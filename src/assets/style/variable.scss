@@ -6,14 +6,12 @@
   --dark: black;
   --success: green;
   --light: white;
+  //dark theme style
+  --bg-color:white;
+  --text-color:black;
 }
 
 .dark-theme {
-  --primary: #ff66c4;
-  --secondry: white;
-  --danger: red;
-  --warning: yellow;
-  --dark: black;
-  --success: green;
-  --light: grey;
+  --bg-color:black;
+  --text-color:white;
 }

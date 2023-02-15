@@ -1,20 +1,22 @@
 :root {
   --primary: #ff66c4;
-  --secondry: grey;
+  --secondry: rgb(218, 218, 218);
   --danger: red;
   --warning: yellow;
   --dark: black;
   --success: green;
   --light: white;
-  //dark theme style
   --bg-color:white;
+ 
+
   --text-color:black;
 }
 
 .dark-theme {
   --bg-color:black;
   --bg-color-secondary:rgb(40, 38, 38);
-
+  --bg-color-dark:gray;
+  
   --text-color:white;
   
 }

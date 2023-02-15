@@ -1,0 +1,59 @@
+@keyframes clip-path-animation {
+  0% {
+    top: 0;
+    opacity: 0.1;
+    visibility: hidden;
+    transform: rotateX(0deg);
+  }
+  50% {
+    top: 50%;
+    opacity: 0.5;
+    visibility: hidden;
+    transform: rotateX(90deg);
+  }
+  100% {
+    top: 100%;
+    opacity: 1;
+    visibility: visible;
+    transform: rotateX(0deg);
+  }
+}
+
+.styled-table {
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 4px var(--primary);
+
+  thead {
+    tr {
+      background-color: var(--primary);
+      color: #ffffff;
+      font-size: 18px;
+      text-align: left;
+      th {
+        padding: 12px 15px;
+      }
+    }
+  }
+  tbody {
+    tr {
+      animation-name: clip-path-animation;
+      animation-timing-function: ease-in-out;
+      transition: visibility 0s, opacity 0.5s ease-in-out;
+      @for $i from 1 through 10 {
+        &:nth-of-type(#{$i}) {
+          animation-duration: #{$i * 0.3}s;
+        }
+      }
+    }
+    tr:nth-of-type(even) {
+      background-color: var(--secondry);
+      color: black;
+    }
+    td {
+      padding: 12px 15px;
+    }
+  }
+}

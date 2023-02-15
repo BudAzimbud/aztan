@@ -52,7 +52,7 @@
     gap: 5px;
   }
   li {
-    color:var(--text-color);
+    color: var(--text-color);
     border-radius: 4px;
     cursor: pointer;
     display: flex;
@@ -81,7 +81,7 @@
 
 .sidebar-small {
   padding: 0 1%;
-  background-color: #fff;
+  background-color: var(--bg-color);
   width: 8%;
   position: fixed;
   height: 100vh;
@@ -114,6 +114,7 @@
     gap: 1rem;
     height: 2rem;
     transition: 0.5s;
+    color: var(--text-color);
 
     &:hover {
       padding-left: 1rem;
@@ -146,9 +147,10 @@
 }
 .main-content-small {
   width: 100%;
-  padding: 1% 0%;
+  padding: 1% 6px;
   transition: 0.7s;
-  margin-left: 7%;
+  margin-left: 8%;
+  background-color: var(--bg-color-secondary);
   .navbar-component {
     width: 90%;
     transition: 0.7s;
@@ -158,9 +160,9 @@
     padding: 10px;
   }
 }
-.select{
+.select {
   background-color: var(--bg-color);
-  color:var(--text-color)
+  color: var(--text-color);
 }
 .navbar-component {
   background-color: var(--bg-color);
@@ -179,7 +181,7 @@
 }
 .main-content .content {
   margin-top: 80px;
-  padding:0 15px;
+  padding: 0 15px;
 }
 .header {
   width: 100%;
@@ -211,11 +213,20 @@
     display: none;
   }
   .navbar-component {
-    width: 100%;
-    right: 0;
+    width: 96%;
+    right:2%
   }
   .main-content {
     width: 100%;
     margin-left: 0;
+  }
+  .main-content-small {
+    transition: width 0.1s;
+    width: 100%;
+    margin-left: 0;
+    .navbar-component {
+      width: 96%;
+      right:2%
+    }
   }
 }

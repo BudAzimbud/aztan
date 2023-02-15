@@ -25,7 +25,7 @@ export default function Home() {
             <li>- Based on Hooks & Functional Components🔥</li>
             <li>- Based on Reactstrap & Vite 🧘</li>
           </ul>
-          <Button color="dark" className="btn-header">
+          <Button color="dark" className="btn-header ">
             Buy Me Lamborgini 🚗
           </Button>
         </div>

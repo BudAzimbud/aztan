@@ -45,7 +45,7 @@ const Sidebar = ({
       </div>
       <ul>
         {menus.map((item, indexParent) => (
-          <Link to={item.link} className="menus">
+          <Link to={item.submenu ? "" : item.link} className="menus">
             <li
               key={indexParent}
               className={`${active === indexParent && "active"}`}
@@ -60,7 +60,6 @@ const Sidebar = ({
               <div className="name" style={colorMenu}>
                 {item.name}
               </div>
-              {/* {item?.submenu ? <p>Y</p> : null} */}
 
               {item?.submenu ? <FiChevronRight /> : null}
             </li>
